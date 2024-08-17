@@ -9,7 +9,7 @@
 </head>
 <body>
 	
-          <div class="marquee" style="border:2px #26b0b0 solid;background-color:white">
+          <div class="marquee" styPreparedStatement ps = con.prepareStatement("SELECT * FROM notice");le="border:2px #26b0b0 solid;background-color:white">
           <h4 style="background-color:#26b0b0; margin-top:-1.8px; padding: 5px;"><i class="glyphicon glyphicon-volume-up"></i> 
           &nbsp; Latest Updates and Notice</h4>
             <div class="marquee-content" style="padding:10px;font-weight: bold;font-size: 1.1em">
@@ -19,7 +19,7 @@
             <% 
                 Connection con = DBUtil.provideConnection();
                 try{
-                	PreparedStatement ps = con.prepareStatement("select * from notice order by sysdate() asc");
+                	PreparedStatement ps = con.prepareStatement("SELECT * FROM notice");
                 	ResultSet rs = ps.executeQuery();
                 	String noticeTitle = null;
                 	String noticeInfo = null;

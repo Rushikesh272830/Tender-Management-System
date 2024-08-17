@@ -6,6 +6,16 @@
   <packaging>war</packaging>
   <name>Tender Management System</name>
   <description>Web Application for Online Tender Management</description>
+  <properties>
+                <jdk.version>1.8</jdk.version>
+                <spring.version>5.1.2.RELEASE</spring.version>
+                <junit.version>4.11</junit.version>
+                <log4j.version>1.2.17</log4j.version>
+                <sonar.host.url>http://172.31.38.151:9000/</sonar.host.url>
+                <sonar.login>squ_0a241cba0a5baefcb6a29ae32e0c41232dcc3386</sonar.login>
+                <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <resources>
